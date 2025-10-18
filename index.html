@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card | Frontend Wizards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <article data-testid="test-profile-card" class="profile-card">
+      <header>
+        <h2 data-testid="test-user-name">Ajibola Abolade</h2>
+      </header>
+
+      <figure>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Profile picture of Ajibola Abolade"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <p data-testid="test-user-bio">
+        A passionate frontend developer and aspiring product manager who loves solving user problems through elegant design and code.
+      </p>
+
+      <p>
+        Current time in milliseconds:
+        <span data-testid="test-user-time" id="user-time"></span>
+      </p>
+
+      <nav aria-label="Social Links">
+        <ul data-testid="test-user-social-links" class="social-links">
+          <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Building side projects</li>
+          <li>Reading tech blogs</li>
+          <li>Traveling</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Slow internet</li>
+          <li>Unclear requirements</li>
+          <li>Cluttered UIs</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
