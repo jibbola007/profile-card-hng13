@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile Card | Frontend Wizards</title>
+  <title>Profile Card</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main>
     <article data-testid="test-profile-card" class="profile-card">
-      <header>
-        <h2 data-testid="test-user-name">Ajibola Abolade</h2>
-      </header>
-
-      <figure>
+      <figure class="avatar">
         <img
-          src="https://via.placeholder.com/150"
+          src="ajibola.jpg"
           alt="Profile picture of Ajibola Abolade"
           data-testid="test-user-avatar"
         />
       </figure>
 
+      <header>
+        <h2 data-testid="test-user-name">Ajibola Abolade</h2>
+      </header>
+
       <p data-testid="test-user-bio">
-        A passionate frontend developer and aspiring product manager who loves solving user problems through elegant design and code.
+        Frontend developer passionate about clean design, accessibility, and building meaningful user experiences.
       </p>
 
-      <p>
+      <p class="time">
         Current time in milliseconds:
         <span data-testid="test-user-time" id="user-time"></span>
       </p>
@@ -38,23 +38,26 @@
         </ul>
       </nav>
 
-      <section>
-        <h3>Hobbies</h3>
-        <ul data-testid="test-user-hobbies">
-          <li>Building side projects</li>
-          <li>Reading tech blogs</li>
-          <li>Traveling</li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>Dislikes</h3>
-        <ul data-testid="test-user-dislikes">
-          <li>Slow internet</li>
-          <li>Unclear requirements</li>
-          <li>Cluttered UIs</li>
-        </ul>
-      </section>
+      <div class="lists-container">
+        <section>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Reading</li>
+            <li>Playing board games</li>
+            <li>Hanging out</li>
+          </ul>
+        </section>
+      
+        <section>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Slow internet</li>
+            <li>Unclear requirements</li>
+            <li>Cluttered UIs</li>
+          </ul>
+        </section>
+      </div>
+      
     </article>
   </main>
 
