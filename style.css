@@ -6,14 +6,14 @@
   }
   
   body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #80deea);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    /* keep background and base font */
+    background: #f2f2f2;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
   }
+  
   
   /* Profile Card Container */
   .profile-card {
@@ -108,7 +108,153 @@
     line-height: 1.5;
   }
   
-  /* Responsive Layout: Two-column at larger screens */
+  .contact-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background: #0078ff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #005fcc;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  .success {
+    color: green;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  nav a[aria-current="page"] {
+    font-weight: bold;
+    color: #0078ff;
+    border-bottom: 2px solid #0078ff;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  input:focus,
+  textarea:focus,
+  button:focus,
+  a:focus {
+    outline: 3px solid rgba(0,120,255,0.15);
+    outline-offset: 2px
+  }
+    
+  
+  .main-nav a:hover {
+    color: #0078ff;
+  }
+  
+  /* ========== GLOBAL LAYOUT ========== */
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f2f2f2;
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  /* ========== PROFILE CARD RESPONSIVENESS ========== */
+  .profile-card {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  
+  /* ========== CONTACT + ABOUT PAGE RESPONSIVENESS ========== */
+  .contact-container,
+  main[data-testid="test-about-page"] {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section {
+    margin-bottom: 1.5rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
   @media (min-width: 768px) {
     .profile-main {
       flex-direction: row;
@@ -125,4 +271,6 @@
       justify-content: space-between;
     }
   }
+
+
   
